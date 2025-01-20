@@ -4,7 +4,6 @@
     <div class="container">
         <h1>Edytuj informacje o zwierzaku</h1>
 
-        <!-- Formularz do aktualizacji obiektu Pet -->
         <form action="{{ route('pets.update', $pet->id) }}" method="POST">
             @csrf
             @method('PUT')

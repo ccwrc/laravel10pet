@@ -6,7 +6,6 @@ use Tests\TestCase;
 
 class PetControllerTest extends TestCase
 {
-
     protected string $apiUrl;
 
     protected function setUp(): void

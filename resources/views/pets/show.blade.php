@@ -9,7 +9,6 @@
         <a href="{{ route('pets.index') }}">Powrót</a>
         <a href="{{ route('pets.edit', $pet->id) }}" class="btn btn-warning">Edytuj</a>
 
-        <!-- Formularz pozwalający na usunięcie obiektu -->
         <form action="{{ route('pets.destroy', $pet->id) }}" method="POST" style="display: inline-block;">
             @csrf
             @method('DELETE')

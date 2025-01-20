@@ -14,7 +14,7 @@ use App\Http\Controllers\PetController;
 |
 */
 
-Route::get('/', [PetController::class, 'index'])->name('pets.index'); // Home page with options
+Route::get('/', [PetController::class, 'index'])->name('pets.index'); // Home page
 Route::get('/pets/create', [PetController::class, 'create'])->name('pets.create'); // Form for creating an object
 Route::post('/pets', [PetController::class, 'store'])->name('pets.store'); // Saving a new object
 Route::get('/pets/{id}', [PetController::class, 'show'])->name('pets.show'); // Displaying an object

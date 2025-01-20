@@ -62,10 +62,8 @@ class PetController extends Controller
             //todo  'photoUrls', 'tags', etc
         ];
 
-        // Wysłanie PUT request do API
         $response = Http::put("{$this->apiUrl}/pet", $payload);
 
-        // Sprawdzenie odpowiedzi
         if ($response->failed()) {
             return back()->withErrors('Błąd aktualizacji obiektu.')->withInput();
         }

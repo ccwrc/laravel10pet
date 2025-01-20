@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Enums;
+namespace App\Models\Enums; //todo change namespace
 
 enum PetStatusEnum: string
 {
@@ -10,6 +10,8 @@ enum PetStatusEnum: string
 
     public function getStatuses(): array
     {
+        //todo to form, etc.
+
         return self::cases();
     }
 }
